@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.normal-styles {
+  padding: 15px 35px;
+  background: rgb(34, 41, 48);
+  color: antiquewhite;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+
+.sorta-hide {
+  opacity: 0.4;
+  color: #000;
+  text-transform: lowercase;
+  cursor: not-allowed;
+}
