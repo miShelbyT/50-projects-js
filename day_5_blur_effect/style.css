@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +17,7 @@ body {
 }
 
 .bg {
-  background: url('https://images.fineartamerica.com/images-medium-large-5/a-field-of-colorful-tulips-in-spring-steve-bly.jpg') no-repeat center center/cover;
+  background: url('./welcome.png') no-repeat center center/cover;
   position: absolute;
   top: -30px;
   left: -30px;
