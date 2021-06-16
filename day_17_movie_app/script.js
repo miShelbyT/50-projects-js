@@ -6,8 +6,11 @@ const next = document.getElementById('next')
 let page = '1'
 let numPage = Number(page)
 
-// clearly the page defaults to 1 implicitly in the endpoint
+// pagination works! still need to figure out how to disable prev button when i get to page 1. prev.disabled shows up in Elements tab but doesn't actually disable the button 👀
 
+// clearly the page defaults to 1 implicitly in the endpoint
+let API_URL =
+  
 
 
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
@@ -59,7 +62,6 @@ form.addEventListener('submit', (e) => {
 
 prev.addEventListener('click', () => {
   if(numPage > 1) numPage -= 1
-  else numPage = 1
   page = numPage.toString()
   getMovies(`${API_URL}${page}`)
 })
