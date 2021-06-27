@@ -9,14 +9,7 @@ let numPage = Number(page)
 // pagination works! still need to figure out how to disable prev button when i get to page 1. prev.disabled shows up in Elements tab but doesn't actually disable the button 👀
 
 // clearly the page defaults to 1 implicitly in the endpoint
-let API_URL =
-  
 
-
-const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
-
-const SEARCH_API =
-  'https://api.themoviedb.org/3/search/movie?api_key=404ed1ee832cf638edc0b474acb88169&query="'
 
 
 
