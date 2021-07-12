@@ -6,7 +6,7 @@
 
 body {
   background: url('https://previews.123rf.com/images/skyclick/skyclick1610/skyclick161000039/66163146-ocean-waves-pattern-seamless-background-hand-drawn-asian-style.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
   display: flex;
