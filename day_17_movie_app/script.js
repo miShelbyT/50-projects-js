@@ -8,8 +8,6 @@ let numPage = Number(page)
 
 // pagination works! still need to figure out how to disable prev button when i get to page 1. prev.disabled shows up in Elements tab but doesn't actually disable the button 👀
 
-// clearly the page defaults to 1 implicitly in the endpoint
-
 
 
 
