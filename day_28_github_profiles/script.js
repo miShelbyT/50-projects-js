@@ -69,7 +69,7 @@ async function getRepos(user) {
 
 function addReposToCard(data){
   const repoList = document.getElementById('repos')
-  for(let i = 0; i < 10; i++){
+  for(let i = 0; i < 7; i++){
     let repo = document.createElement('a')
     repo.classList.add('repo')
     repo.innerText = data[i].name
