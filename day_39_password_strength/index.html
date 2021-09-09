@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> -->
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  <title>My First Project</title>
-</head>
-<body>
-  <h1>project starter</h1>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.14/tailwind.min.css"
+      integrity="sha512-WoalYHon7sXFbGCM10NaiwPXNShZVByyZeCogItyhUvTEabYY8UQCqs2JuhI/N2mSrefc36K13s7zKt24Lcupg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Password Strength/Image</title>
+  </head>
+  <body>
+   <div class="background" id="background"></div>
+   <div class="bg-white rounded p-10 text-center shadow-md">
+     <h1 class="text-3xl">Image Password Strength</h1>
+     <p class="text-sm text-gray-700">Enter a new password and see the magic happen!</p>
+     <div class="my-4 text-left">
+       <label for="email" class="text-gray-900">Email:</label>
+       <input type="text" class="border block w-full p-2 mt-2 rounded" id="email" placeholder="enter email">
+     </div>
+     <div class="my-4 text-left">
+       <label for="password" class="text-gray-900">Password:</label>
+       <input type="password" class="border block w-full p-2 mt-2 rounded" id="password" placeholder="enter password">
+     </div>
+     <button class="bg-black text-white py-2 mt-4 inline-block w-full rounded" type="submit">Submit</button>
+   </div>
+  </body>
 </html>
