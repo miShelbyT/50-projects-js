@@ -1,16 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
+:root {
+  --main: #860aeb;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  background: var(--main);
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+.screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  font-weight: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.butterflies-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.butterflies-list li {
+  margin: 10px;
+}
+
+.choose-butterfly-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 150px;
+  height: 170px;
+}
+
+.choose-butterfly-btn:hover {
+  background: #fff;
+  color: var(--main);
+}
+
+.choose-butterfly-btn:active {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.btn {
+  border: 0;
+  background: #fff;
+  color: var(--main);
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+/* .btn:focus {
+  outline: 0;
+} */
+
+.choose-butterfly-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 45px;
+}
+
+.score {
+  right: 45px;
+}
+
+.message {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in;
+}
+
+.message.visible {
+  opacity: 1;
+  transform: translate(-50%, 150%);
+}
+
+span {
+  font-size: 25px;
+}
+
+.butterfly {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.butterfly.clicked {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.butterfly img {
+  height: 100%;
+  width: 100%;
 }
